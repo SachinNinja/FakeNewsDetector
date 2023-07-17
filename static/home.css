@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background: url("../static/images/news1.jpg") rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(5px);
+}
+
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 50px;
+  margin-bottom: 60px;
+  width: 60%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form h2 {
+  padding: 20px;
+  text-decoration: underline;
+}
+
+.form input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.submit {
+  background-color: #9f0500;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit:hover {
+  background-color: #e62b2b;
+}
+
+@media (max-width: 1200px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #005f5c;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+section {
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.back {
+  background-color: green;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.back:hover {
+  background-color: #00cd3a;
+}
+.back a {
+  text-decoration: none;
+  color: white;
+}

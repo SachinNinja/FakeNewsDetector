@@ -1,0 +1,43 @@
+body {
+  background-color: #d4f8c5;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.container{
+  width: 100%;
+  margin-top:100px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  color: #008000;
+}
+
+img {
+  width: 350px;
+  height: auto;
+  margin: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 20px;
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button a{
+  text-decoration: none;
+  color:white;
+}

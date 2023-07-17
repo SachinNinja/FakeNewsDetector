@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fake news Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='home.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="news">
+      <form class="form" method="POST" action="/predict" autocomplete="off">
+        <h2>Real or Fake ? Let's Find Out !</h2>
+        <input
+          type="text"
+          name="article"
+          id="article"
+          placeholder="Enter news article here..."
+          onfocus="this.value = ''"
+          ;
+        />
+        <button type="submit" id="submit" class="submit">Verify</button>
+        <span class="back"><a href="/">Go Back</a></span>
+      </form>
+    </section>
+  </body>
+</html>

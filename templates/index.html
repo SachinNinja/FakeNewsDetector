@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Fake News detector</title>
+  </head>
+  <body>
+    <!-- Home Page of Fintracker -->
+    <!-- Navigation Bar -->
+    <header class="header">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="/home">Check News</a></li>
+        <li><a href="/recentFake">Recent Fake News</a></li>
+        <li><a href="/news">Authentic News</a></li>
+        <li><a href="/report">Report News</a></li>
+        <li><a href="/about">About Us</a></li>
+      </ul>
+    </header>
+    <!-- Content of the home page -->
+    <div class="container">
+      <h1>
+        <span class="tracker">Fake</span>News
+        <span style="color: blue">Detector</span>
+      </h1>
+      <div class="content">
+        <p>Check how authentic your daily news is !!</p>
+        <button class="btn"><a href="/home">Get Started</a></button>
+      </div>
+    </div>
+  </body>
+</html>

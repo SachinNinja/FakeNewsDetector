@@ -1,0 +1,192 @@
+/* It is the style sheet for index.html */
+
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+/* Fix home screen */
+body {
+  width: 100%;
+  /* Fix home screen */
+  overflow-x: hidden;
+}
+
+/* Style for container */
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background: url("../static/images/news5.jpg") rgba(0, 0, 0, 0.676);
+  background-size: cover;
+  /* Darken background Code */
+  background-blend-mode: multiply;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/* Container h1 , color should be different for Fin and Tracker */
+.container h1 {
+  font-size: 7vw;
+  margin-bottom: 10px;
+}
+.tracker {
+  color: rgb(255, 0, 0);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.content {
+  display: inline;
+  width: 80%;
+  /* align on right side */
+  text-align: right;
+  text-align: center;
+  margin-top: 5px;
+}
+.content p {
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* line spacing for p tag*/
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.content button {
+  text-decoration: none;
+  color: white;
+  background-color: #1b1b1b;
+  padding: 1vw 1vw;
+  /* Align it to center */
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.content a {
+  text-decoration: none;
+  color: white;
+}
+.content button:hover {
+  background-color: rgb(0, 43, 71);
+  color: #1b1b1b;
+}
+/* Navbar start */
+.header {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100vw;
+  z-index: 3;
+  font-size: 2vh;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header li a {
+  display: block;
+  padding: 10px 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-right: 1px solid #f4f4f4;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration: none;
+}
+.header li a:hover {
+  color: rgb(48, 48, 251);
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  color: white;
+  text-shadow: 4px black;
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1vh 20px;
+  text-decoration: none;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fffefe;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #ffffff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+

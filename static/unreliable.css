@@ -1,0 +1,33 @@
+body {
+  background-color: #101300;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #e3ee52;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+button {
+  margin-top: 60px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #e3ee52;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button a{
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+}

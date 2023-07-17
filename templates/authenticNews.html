@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='news.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <span class="title">Latest News</span>
+    <ol>
+        {% for article in articles %}
+            <li class="article">
+                <h2 class="article-title">{{ article.title }}</h2>
+                <p class="article-description">{{ article.content }}</p>
+                <p class="article-info">Published: {{ article.pubDate }}</p>
+                <p class="article-info">Creator: {{ article.creator }}</p>
+                <a class="read-more" href="{{ article.link }}">Read More</a>
+            </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>

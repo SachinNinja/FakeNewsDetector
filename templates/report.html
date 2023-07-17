@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Report Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:url('../static/images/4514526.jpg') no-repeat fixed;
+            background-size: cover;
+            background-color:blue;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top:50px;
+            padding: 20px;
+            background-color: grey;
+            background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8));
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        input[type="text"],input[type="date"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            outline:none;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: red;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fake News Report Form</h1>
+        <form action="/submit" method="POST">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="proof">Proof of Being Fake:</label>
+            <textarea id="proof" name="proof" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
